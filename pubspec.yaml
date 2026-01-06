@@ -36,15 +36,24 @@ dependencies:
   cupertino_icons: ^1.0.8
 
   # Turbo packages
-  turbo_firestore_api: ^1.0.0
-  turbo_forms: ^1.0.0
-  turbo_mvvm: ^1.0.0
-  turbo_notifiers: ^1.0.0
-  turbo_response: ^1.0.0
-  turbo_responsiveness: ^1.0.0
-  turbo_routing: ^1.0.0
-  turbo_widgets: ^1.0.0
-  turbolytics: ^1.0.0
+  turbo_firestore_api:
+    path: ../../turbo_firestore_api
+  turbo_forms:
+    path: ../../turbo_forms
+  turbo_mvvm:
+    path: ../../turbo_mvvm
+  turbo_notifiers:
+    path: ../../turbo_notifiers
+  turbo_response:
+    path: ../../turbo_response
+  turbo_responsiveness:
+    path: ../../turbo_responsiveness
+  turbo_routing:
+    path: ../../turbo_routing
+  turbo_widgets:
+    path: ../../turbo_widgets
+  turbolytics:
+    path: ../../turbolytics
 
 dev_dependencies:
   flutter_test:
@@ -56,6 +65,17 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^6.0.0
+
+# Override turbo package dependencies to use local paths
+dependency_overrides:
+  turbo_widgets:
+    path: ../../turbo_widgets
+  turbo_notifiers:
+    path: ../../turbo_notifiers
+  turbolytics:
+    path: ../../turbolytics
+  turbo_response:
+    path: ../../turbo_response
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
